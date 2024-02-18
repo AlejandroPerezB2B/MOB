@@ -16,6 +16,7 @@ Below, you will find a list of the essential components required for the setup, 
 
   * Subitem 2.1
   * Subitem 2.2
+    
 *This text* is italicized.
 _This text_ is also italicized.
 
