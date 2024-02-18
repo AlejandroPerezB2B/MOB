@@ -1,5 +1,4 @@
 # Neuroelectric Closed-Loop setup
-___
 This README file outlines the setup for a closed-loop tRNS system that incorporates a non-aperiodic component from EEG data. It leverages Bayesian optimization to dynamically adjust stimulation parameters—specifically amplitude and frequency—based on real-time analysis of EEG signals. This method ensures optimal stimulation settings are identified and applied, enhancing tRNS effectiveness and specificity by adapting to the individual’s neural state.
 ___
 Authors: Alejandro Perez, Shachar Hochman and Roi Cohen Kadosh
