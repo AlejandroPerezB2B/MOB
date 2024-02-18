@@ -3,7 +3,7 @@ This README file outlines the setup for a closed-loop tRNS system that incorpora
 ---
 Authors: Alejandro Perez, Shachar Hochman and Roi Cohen Kadosh
 
-This document provides a detailed, step-by-step guide designed to help users implement the setup from scratch. Below, you will find a list of the essential components required for the setup, along with the specific versions used during development:
+Below, you will find a list of the essential components required for the setup, along with the specific versions used during development:
 
 MATLAB software (Version 2023b).
 NIC2 application (Version 2.1.3.5).
