@@ -1,4 +1,4 @@
-# Neuroelectric Closed-Loop setup
+# Manual for Neuroelectric Closed-Loop setup
 This README file outlines the setup for a closed-loop tRNS system that incorporates a non-aperiodic component from EEG data. It leverages Bayesian optimization to dynamically adjust stimulation parameters—specifically amplitude and frequency—based on real-time analysis of EEG signals. This method ensures optimal stimulation settings are identified and applied, enhancing tRNS effectiveness and specificity by adapting to the individual’s neural state.
 ___
 Authors: Alejandro Perez, Shachar Hochman and Roi Cohen Kadosh
@@ -13,8 +13,7 @@ Below, you will find a list of the essential components required for the setup, 
 * Starstim device.
 * A PC equipped with WiFi and running Windows OS (Windows 11 Pro).
 
-* Item 1
-* Item 2
+
   * Subitem 2.1
   * Subitem 2.2
 *This text* is italicized.
