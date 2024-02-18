@@ -1,8 +1,10 @@
-# Neuroelectric Closed-Loop setup  
+# Neuroelectric Closed-Loop setup
+___
 This README file outlines the setup for a closed-loop tRNS system that incorporates a non-aperiodic component from EEG data. It leverages Bayesian optimization to dynamically adjust stimulation parameters—specifically amplitude and frequency—based on real-time analysis of EEG signals. This method ensures optimal stimulation settings are identified and applied, enhancing tRNS effectiveness and specificity by adapting to the individual’s neural state.
----
+___
 Authors: Alejandro Perez, Shachar Hochman and Roi Cohen Kadosh
-
+___
+This document provides a detailed, step-by-step guide designed to help users implement the setup from scratch.
 Below, you will find a list of the essential components required for the setup, along with the specific versions used during development:
 
 MATLAB software (Version 2023b).
