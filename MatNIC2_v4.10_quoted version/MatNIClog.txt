@@ -1,0 +1,80 @@
+MatNIC2 v4.10
+- MatNICConfigureFileNameAndTypes: solved issue where the function was asking for minimum of 7 parameters while expecting 6.
+- Updated LSL version to 1.14.0
+
+MatNIC2 v4.09
+- MatNICConfigureFileNameAndTypes: syntax error fixed.
+
+MatNIC v4.08
+- MatNICDisconnect added.
+
+MatNIC v4.07
+- Extended information on connected device.
+- TCP server functions updated to new server in NIC2.0.9
+- Added MatNICEEGBandRecord to record power in bands through new TCP server in NIC2.0.9
+- MatNICConfigureFileNameAndTypes: stim parameter removed and inverted order of SD card and EDF files parameters
+
+MatNIC v4.06
+- Device firmware information available
+
+MatNIC v4.05
+- Added MatNICImportProtocol (not in the public distribution)
+
+MatNIC v4.04
+- Added MatNICConfigurePathFile
+- Solved bug. Protocol could fall into an infinite loop.
+
+MatNIC v4.03
+- Changed Command and Status Codes
+- Added Pulse-Triggered Stimulation (non public feature)
+
+MatNIC v 04.02
+- MatNICManualImpedance allows the selection of impedance check type, tDCS or tACS.
+
+MatNIC v 04.01
+- MatNIC shows a message when device is synchronizing.
+- Solved bug when device is synchronizing.
+- Corrected dialogs
+- Bug fixing
+
+Version v04.00
+- MatNIC adapted for NIC 2.0
+- Added extra time to Stop EEG and UnloadTemplate functions to give time to COREGUI to change its own state. 
+- Added condition to MatNICConnect function
+- Added log.txt to MatNIC project
+
+Version v1.4.910RC
+- NICOffline: The display starts/stops when Space key is pushed.
+- NICOffline: Added trigger information into nedf v1.3
+- New MatNIC version: 03.04
+- Added Nedf v.1.2
+- New MatNIC version: 02.07 (Manual Check Impedance)
+
+Version v03.08
+- Added MatNICConfigureNameAndTypes
+
+Version 03.07
+- Fixed bug in Acc record LSL
+
+Version v03.06
+- Added MatNICEEGConnectLSL.m function
+
+Version 3.05
+- Name of LSL instead of source_id
+- Minor changes
+
+Version 03.04
+- MatNIC is compatible with the latest NIC and COREGUI
+
+Version 03.03
+- Manual Check Impedances
+- Manual check impedance added
+- Minor change. When MatNIC's version inside COREGUI is not equal to MatNIC's the socket WILL NOT be closed.
+
+Version 03.02
+Version 03.01
+
+Version 03.00
+- New function to change tACS stimulation (amplitude, frequency and phase)
+- First Commit
+
