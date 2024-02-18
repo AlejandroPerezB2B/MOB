@@ -7,8 +7,9 @@ This document provides a detailed, step-by-step guide designed to help users imp
 Below, you will find a list of the essential components required for the setup, along with the specific versions used during development:
 
 * MATLAB software (*Version 2023b*).
-* NIC2 application (*Version 2.1.3.5*).
-* MatNIC2 (*Version 4.10*, paid version).
+* NIC2 application (*Version 2.1.3.5*). [Link to Download](https://www.neuroelectrics.com/resources/software)
+* MatNIC2 (*Version 4.10*, paid version). Included in the folder 'MatNIC2_v4.10_quoted version' on this repository.
+* Lab Streaming Layer (LSL) library for Matlab. Included in the folder 'liblsl-Matlab' on this repository. 
 * Starstim device.
 * A PC equipped with WiFi and running Windows OS (Windows 11 Pro).
 
