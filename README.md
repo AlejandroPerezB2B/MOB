@@ -11,7 +11,7 @@ Below, you will find a list of the essential components required for the setup, 
 * Starstim device.
 * A PC equipped with WiFi and running Windows OS (*Windows 11 Pro*).
 
-<u>MatNIC/Matlab and the NIC2 software are running on the same computer.</u>
+<u> MatNIC/Matlab and the NIC2 software are running on the same computer. </u>
 
 ## Step 1
 
