@@ -21,14 +21,14 @@ Install Matlab on the PC.
     To interact with the software instrument controller (NIC2 software) and, in turn, with the Neuroelectric device connected to it.
     MatNIC provides control of the main functions of the software, namely, (1) Loading and launching EEG and stimulation protocols and (2) management of neurostimulation   online.
   * Download and add to the path 'FOOOF Matlab wrapper' for Spectral Parameterization. (File 'fooof_mat-1.0.0.zip' in this repository.)
-    To measure periodic and aperiodic properties of electrophysiological data. 
-
-Subitem 2.1
-  * Subitem 2.2
+    This is the tool to measure periodic and aperiodic properties of electrophysiological data.
+    Donoghue et al. (2020). DOI: 10.1038/s41593-020-00744-x
     
 ## Step 2
 
 Install NIC2 app.
+  * Pair NIC2 with a Starstim device. NIC2 utilizes the features of the most recently paired Starstim device to configure new protocols effectively.
+    For detailed instructions on the pairing process, please refer to the 'Device Pairing' section in the NIC2 manual ('NE_P2_UM004_EN_NIC2.1.2_1.pdf').
 
 
 
