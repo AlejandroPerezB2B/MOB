@@ -5,9 +5,10 @@ This document provides a detailed, step-by-step guide designed to help users imp
 Below, you will find a list of the essential components required for the setup, along with the specific versions used during development:
 
 * MATLAB software (*Version 2023b*).
-* NIC2 application (*Version 2.1.3.5*). [Link to Download](https://www.neuroelectrics.com/resources/software)
 * MatNIC2 (*Version 4.10*, paid version). Included in the folder 'MatNIC2_v4.10_quoted version' on this repository.
-* Lab Streaming Layer (LSL) library for Matlab. Included in the folder 'liblsl-Matlab' on this repository. 
+* Lab Streaming Layer (LSL) library for Matlab. Included in the folder 'liblsl-Matlab' on this repository.
+* FOOOF Matlab wrapper (*v1.0.0*) [Link to repository](https://github.com/fooof-tools/fooof_mat/releases/tag/v1.0.0)
+* NIC2 application (*Version 2.1.3.5*). [Link to Download](https://www.neuroelectrics.com/resources/software)
 * Starstim device.
 * A PC equipped with WiFi and running Windows OS (*Windows 11 Pro*).
 
@@ -17,6 +18,7 @@ Below, you will find a list of the essential components required for the setup, 
 
 Install Matlab on the PC.
 Download the 'MatNIC2_v4.10_quoted version' and the 'liblsl-Matlab' folders and add them to the path.
+Download 'FOOOF Matlab wrapper' for Spectral Parameterization. To measure periodic and aperiodic properties of electrophysiological data. ADD to the path.
 
   * Subitem 2.1
   * Subitem 2.2
