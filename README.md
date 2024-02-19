@@ -18,7 +18,10 @@ Below, you will find a list of the essential components required for the setup, 
 
 Install Matlab on the PC.
   * Download and add to the path the 'MatNIC2_v4.10_quoted version' and the 'liblsl-Matlab' folders.
-  * Download and add to the path 'FOOOF Matlab wrapper' for Spectral Parameterization. To measure periodic and aperiodic properties of electrophysiological data. File 'fooof_mat-1.0.0.zip' in this repository.
+    To interact with the software instrument controller (NIC2 software) and, in turn, with the Neuroelectric device connected to it.
+    MatNIC provides control of the main functions of the software, namely, (1) Loading and launching EEG and stimulation protocols and (2) management of neurostimulation   online.
+  * Download and add to the path 'FOOOF Matlab wrapper' for Spectral Parameterization. (File 'fooof_mat-1.0.0.zip' in this repository.)
+    To measure periodic and aperiodic properties of electrophysiological data. 
 
 Subitem 2.1
   * Subitem 2.2
