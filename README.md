@@ -31,12 +31,12 @@ Then
   * Pair NIC2 with a Starstim device. NIC2 utilizes the features of the most recently paired device to configure new protocols effectively.
     For detailed instructions on the pairing process, please refer to the 'Device Pairing' section in the NIC2 manual ('NE_P2_UM004_EN_NIC2.1.2_1.pdf').
   * Once the Starstim 32 has been paired at least once, utilize the NIC2 to generate protocols for EEG recording and tRNS stimulation.
-    
+
     A template of the EEG protocol is  provided in the file 'EEG_Protocol.neprot'. The template is configured for a one-minute EEG recording with 7 channels. Please adjust the settings as needed.
 
 ![EEG_Protocol](EEGprotocolNIC2.png)
 
-    A template of the tRNS protocol is provided in the file 'tRNS_Protocol.neprot'. The template is pre-configured for a 10-second stimulation duration, featuring a 3-second ramp-up and ramp-down period. The stimulation is exclusively delivered by F3 with a tRNS filtering between 100 Hz and 500 Hz (maximum value possible). The STD parameter is set to 150, and the Offset is set to 10. It's important to note that these settings are solely intended for testing purposes. The significance and impact of the STD and Offset parameters are complex and require further understanding and consideration. In essence, the tRNS protocol MUST be modified and tailored before actual usage.
+A template of the tRNS protocol is provided in the file 'tRNS_Protocol.neprot'. The template is pre-configured for a 10-second stimulation duration, featuring a 3-second ramp-up and ramp-down period. The stimulation is exclusively delivered by F3 with a tRNS filtering between 100 Hz and 500 Hz (maximum value possible). The STD parameter is set to 150, and the Offset is set to 10. It's important to note that these settings are solely intended for testing purposes. The significance and impact of the STD and Offset parameters are complex and require further understanding and consideration. In essence, the tRNS protocol MUST be modified and tailored before actual usage.
 
 ![tRNS_Protocol](tRNSprotocolNIC2.png)
 
