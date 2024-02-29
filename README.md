@@ -59,18 +59,17 @@ In this final step, execute the MATLAB script containing all the necessary comma
 6. Implementing tRNS with the chosen parameters.
 7. Concluding the loop.
    
-The script, named MOB_script.mat, serves as the primary resource in the repository. Please note that it is a work in progress.
+The script, named *MOB_script.mat*, serves as the primary resource in the repository. Please note that it is a work in progress.
 
 Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
 
+`%% connect to socket`
+`close all` 
+`clear all`
+`clc`
+`[ret, status, socket] = MatNICConnect('localhost')`
 
-`%% connect to socket
-close all 
-clear all
- clc
-[ret, status, socket] = MatNICConnect('localhost')`
-
- 
+ ![](connect2socket1.png)
 
 NIC then will ask for remote control, confirm control on NIC before the socket is closed 
 
