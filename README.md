@@ -11,10 +11,11 @@ Below, you will find a list of the essential components required for the setup, 
 * Starstim 32 device.
 * A PC equipped with WiFi and running Windows OS (*Windows 11 Pro*).
 
-*MatNIC/Matlab and the NIC2 software are running on the same computer.*
-Transmission Control Protocol (TCP) will be employed for streaming data. However, in the event that Lab Streaming Layer (LSL) is utilized, please note that the LSL library for Matlab is included in the 'liblsl-Matlab' folder within this repository. It should be downloaded and added to the path.
+**MatNIC/Matlab and the NIC2 software are running on the same computer.**
 
-## Step 1 Install Matlab.
+Transmission Control Protocol (TCP) will be employed for streaming data. However, if Lab Streaming Layer (LSL) is utilized, please note that the LSL library for Matlab is included in the 'liblsl-Matlab' folder within this repository. It should be downloaded and added to the path.
+
+## Step 1: Install Matlab.
 
 Then
   * Download and add to the path the 'MatNIC2_v4.10_quoted version' folder.
@@ -27,9 +28,11 @@ Then
 ## Step 2: Install NIC2 app.
 
 Then
-  * Pair NIC2 with a Starstim device. NIC2 utilizes the features of the most recently paired Starstim device to configure new protocols effectively.
+  * Pair NIC2 with a Starstim device. NIC2 utilizes the features of the most recently paired device to configure new protocols effectively.
     For detailed instructions on the pairing process, please refer to the 'Device Pairing' section in the NIC2 manual ('NE_P2_UM004_EN_NIC2.1.2_1.pdf').
-
+  * Once the Starstim 32 has been paired at least once, utilize the NIC2 to generate protocols for EEG recording and tRNS stimulation. A template of the EEG protocol is   
+    provided in the file 'EEG_Protocol.neprot'. The template is configured for a one-minute EEG recording with 7 channels. Please adjust the settings as needed.
+![EEG_Protocol](path/to/image.jpg)
 
 
 
