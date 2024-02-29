@@ -40,6 +40,9 @@ A template of the tRNS protocol is provided in the file 'tRNS_Protocol.neprot'. 
 
 ![tRNS_Protocol](tRNSprotocolNIC2.png)
 
+## Step 3: Setting up NIC2.
 
+On NIC2, turn on the TCP connections. Then, click on the small gear icon to the right for more details. See figures below for reference:
 
-
+![Transmission Control Protocol (TCP)](TCP_connections_settings1.png)
+![Transmission Control Protocol (TCP)](TCP_connections_settings.png)
