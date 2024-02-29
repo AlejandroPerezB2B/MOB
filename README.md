@@ -42,7 +42,51 @@ A template of the tRNS protocol is provided in the file 'tRNS_Protocol.neprot'. 
 
 ## Step 3: Setting up NIC2.
 
-On NIC2, turn on the TCP connections. Then, click on the small gear icon to the right for more details. See figures below for reference:
+On NIC2, turn on the TCP connections. Then, click on the small gear icon to the right for more details. See the figures below for reference:
 
 ![Transmission Control Protocol (TCP)](TCP_connections_settings1.png)
 ![Transmission Control Protocol (TCP)](TCP_connections_settings.png)
+
+## Step 4: Running script on Matlab.
+
+In this final step, execute the MATLAB script containing all the necessary commands to accomplish various tasks, including:
+
+1. Establishing a connection to the NIC.
+2. Initiating the loop.
+3. Recording EEG signals.
+4. Estimating the aperiodic component.
+5. Selecting amplitude and/or frequency parameters based on the aperiodic component using Bayesian optimization.
+6. Implementing tRNS with the chosen parameters.
+7. Concluding the loop.
+   
+The script, named MOB_script.mat, serves as the primary resource in the repository. Please note that it is a work in progress.
+
+Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
+
+
+`%% connect to socket
+close all 
+clear all
+ clc
+[ret, status, socket] = MatNICConnect('localhost')`
+
+ 
+
+NIC then will ask for remote control, confirm control on NIC before the socket is closed 
+
+#checking on 
+
+[ret, version, n_channels, deviceSettings] = MatNICSetUp (socket)
+
+ 
+
+Before running the next line of code, ensure that your protocol is imported on NIC
+
+Load MatNIC protocol
+ret = MatNICLoadProtocol ('Stim', socket)
+ 
+
+%% Start MatNIC protocol
+[ret] = MatNICStartProtocol (socket)
+ 
+
