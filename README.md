@@ -65,7 +65,7 @@ Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
 
 `%% connect to socket`
 
-`close all` 
+`close all`
 
 `clear all`
 
@@ -73,15 +73,15 @@ Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
 
 `[ret, status, socket] = MatNICConnect('localhost')`
 
- ![](connect2socket1.png)
+ ![MatNICConnect](connect2socket1.png)
 
 NIC then will ask for remote control using an emergent window. Manually, confirm control on NIC before the socket is closed.
 
-#checking on 
+`#checking on `
 
-[ret, version, n_channels, deviceSettings] = MatNICSetUp (socket)
+`[ret, version, n_channels, deviceSettings] = MatNICSetUp (socket)`
 
-  ![](connect2socket2.png)
+  ![MatNICSetUp](connect2socket2.png)
 
 Before running the next line of code, ensure that your protocol is imported on NIC
 
@@ -89,10 +89,11 @@ Before running the next line of code, ensure that your protocol is imported on N
 
 `ret = MatNICLoadProtocol ('Stim', socket)`
  
-  ![](connect2socket3.png)
+  ![MatNICLoadProtocol](connect2socket3.png)
 
-%% Start MatNIC protocol
-[ret] = MatNICStartProtocol (socket)
+`% Start MatNIC protocol`
+
+`[ret] = MatNICStartProtocol (socket)`
  
-  ![](connect2socket4.png)
+  ![MatNICStartProtocol](connect2socket4.png)
 
