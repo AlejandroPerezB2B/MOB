@@ -63,7 +63,7 @@ The script, named **MOB_script.mat**, serves as the primary resource in the repo
 
 Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
 
-`%% connect to socket`
+`% connect to socket`
 
 `close all`
 
@@ -77,7 +77,7 @@ Below is an example of MATLAB code to achieve point 1, "Connection to NIC":
 
 NIC then will ask for remote control using an emergent window. Manually, confirm control on NIC before the socket is closed.
 
-`#checking on `
+` % checking on `
 
 `[ret, version, n_channels, deviceSettings] = MatNICSetUp (socket)`
 
