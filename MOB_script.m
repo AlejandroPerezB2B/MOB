@@ -3,7 +3,6 @@
 %          SETUP           %
 %                          % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 % Connect to the NIC software using the local host address.
 % This command establishes a connection and returns the socket information for subsequent commands.
 [~, ~, socket] = MatNICConnect('localhost');
@@ -16,7 +15,7 @@
 
 % Connect to an LSL stream for receiving marker data.
 % 'MatNICMarkerConnectLSL(name) makes the connection to the software with a stream indicated by name.
-[ret, outlet] = MatNICMarkerCatConnectLSL('LSLMarkersInletStreamName1');
+[ret, outlet] = MatNICMarkerConnectLSL('LSLMarkersInletStreamName1');
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -44,7 +43,32 @@ ret = MatNICUnloadProtocol(socket);
 %                          %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Set the environment variable
+setenv('KMP_DUPLICATE_LIB_OK', 'TRUE');
 
+preprocess_eeg(eeg) % See function
+
+chan_label = 'Ch5';
+overlap = 1000;
+window_count = 2000;
+pad = 250;
+
+% Run FFT analysis
+fft_results = run_fft(EEG, chan_label, overlap, window_count, pad);
+
+% FOOOF
+[psd, freqs] = pwelch(ch_dat_one, 500, [], [], s_rate);
+
+% Transpose, to make inputs row vectors
+freqs = freqs';
+psd = psd';
+
+% FOOOF settings
+settings = struct();  % Use defaults
+f_range = [1, 250];
+
+% Run FOOOF
+fooof_results = fooof(freqs, psd, f_range, settings);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                          %
@@ -62,8 +86,8 @@ ret = MatNICLoadProtocol('BlankStim', socket);
 ret = MatNICStartProtocol(socket);
 
 % Set the protocol parameters for the stimulation.
-n_channels = 8; % Number of channels in the current device.
-amplitude = 500; % Desired amplitude of the stimulation for certain channels (in μA).
+n_channels = 2; % Number of channels in the current device.
+amplitude = 200; % Desired amplitude of the stimulation for certain channels (in μA).
 
 % Create the amplitude array for all channels with current conservation.
 % Example setup: Alternate between positive and negative to ensure current conservation.
@@ -74,6 +98,7 @@ amplitudeArray(2:2:end) = -amplitude;  % Set negative amplitude for even-numbere
 % Change the amplitude of the channels using the earlier created array.
 % This command sends the new amplitude settings to the NIC for real-time adjustment.
 ret = MatNICOnlineAtrnsChange(amplitudeArray, n_channels, socket);
+ret = MatNICAbortProtocol(socket);
 
 % Finally, unload the stimulation protocol.
 % Ensures that the system is clean and no residual configurations affect subsequent operations.
